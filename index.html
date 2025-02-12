@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Math Learning App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        .logo {
+            width: 150px;
+            margin: 30px auto;
+            display: block;
+        }
+        
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="your-logo.png" alt="Логотип" class="logo">
+        <h1>Добро пожаловать в Math Academy! �у📚</h1>
+        <p>Готовься к экзаменам и зарабатывай криптовалюту!</p>
+    </div>
+
+    <!-- Подключаем Telegram Web App SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        // Инициализация Telegram Web App
+        const tg = window.Telegram.WebApp;
+        tg.expand(); // Раскрываем приложение на весь экран
+        tg.MainButton.setText("Закрыть").show().onClick(() => tg.close());
+    </script>
+</body>
+</html>
